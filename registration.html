@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            table{
+                margin-top: 35px;
+                background-color: white;
+            }
+            caption {
+                background-color: white;
+            }
+            input{
+                border-color:  black;
+            }
+            input[type= "reset"]{
+                background-color: white;
+                color:black;
+                box-shadow: 0px 2px black;
+                
+            }
+            input[type= "submit"]{
+                background-color: white;
+                color:black;
+                box-shadow: 0px 2px black;
+                
+            }
+
+        </style>
+
+    </head>
+    <body align = "center">
+        
+        <table align = "center" cellpadding = "10" border = "0"> 
+            <form>
+            <caption ><h2 style = "color:red;">Student&nbspRegistration&nbspForm</h2></caption>
+            <tr>
+                <td align = "left"><b>Reg&nbspno</b></td>
+                <td colspan="2"><input type = "text" placeholder = "Enter your RegNo"></td>
+            </tr>
+            <tr>
+                <td align = "left"><b>Name</b></td>
+                <td colspan = "2"><input type = "text" placeholder = "Enter Your Name"></td>
+            </tr>
+            <tr>
+                <td align = "left"><b>Father&nbspName</b></td>
+                <td colspan = "2"><input type = "text" placeholder = "Enter your Father Name"></td>
+            </tr>
+            <tr>
+                <td align = "left"><b>Gender</b></td>
+                <td align = "left"><input type = "radio" name = "gender" value = "Female">&nbspFemale</td>
+                <td align = "left"><input type = "radio" name = "gender" value = "Male">&nbspMale</td>
+
+            </tr>
+            <tr>
+                <td align = "left"><b>Date Of Birth</b></td>
+                <td colspan = "2"><input type = "date" name = "DateofBirth" id = "DOB"></td>
+            </tr>
+            <tr>
+                <td align = "center"><b>Languages&nbspKnown</b></td>
+                <td align = "left"><input type = "checkbox" id = "Clanguage" value = "C" name = "C">&nbsp;C&nbsp;&nbsp;&nbsp;
+                <input type = "checkbox" id = "pylanguage" value = "python" name = "python">&nbsp;python<br>
+                
+                
+                <input type = "checkbox" id = "julanguage" value = "Julia" name = "Julia">&nbsp;julia
+                <input type = "checkbox" id = "Clanguage" value = "C++" name = "C++">&nbsp;C++
+               
+                </td>
+                <td align = "left">
+                
+                    <input type = "checkbox" id = "Rlanguage" value = "R" name = "R">&nbsp;R<br>
+                
+                    <input type = "checkbox" id = "javalanguage" value = "java" name = "java">&nbsp;java
+
+
+                </td>
+            </tr>
+            <tr>
+                <td align = "left" ><b>Branch</b></td>
+                <td colspan = "2" ><select placeholder = "Select branch" align = "left">
+                    <option>CSE</option>
+                    <option>EEE</option>
+                    <option>AI&DS</option>
+                    <option>AI&ML</option>
+                    <option>ECE</option>
+                    <option>MECH</option>
+                    <option>Civil</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td align = "left"><b>Address</b></td>
+                <td colspan = "2"><textarea rows = "6"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan = "3">
+                <input type = "reset" value = "Reset">&nbsp&nbsp
+                <input type = "submit" value = "submit">
+
+                </td>
+            </tr>
+            
+        </table>
+        
+        
+    </body>
+</html>
