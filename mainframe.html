@@ -3,19 +3,20 @@
 <head>
 	<title>Frame</title>
 </head>
-
-	<frameset rows = 15%,15%,60%,10%>
-		<frame src = "header.html">
-		<frame name = "menu" src = "menu.html"> 
-		<frameset cols = 60%,40%>
-			<frame name = "content" src = "content.html">
-
-			<frame src = "latest_news.html" >
-		</frameset>
-
-		<frame src = "footer.html">
+<body>
+	
+			<iframe height = 100px width="100%" src = "header.html"></iframe>
+			<iframe name = menu height=100px width = "100%" src = "menu.html"> </iframe>
 		
-		</frameset>
+			<iframe width = "70%" height="350px" name = "content" src = "content.html"></iframe>
+
+			<iframe width = "29%" height = "350px"src = "latest_news.html"  ></iframe>
+			
+
+			<iframe height = 100px width = "100%" src = "footer.html"></iframe>
+	</body>
+		
+		
 	
 	</html>
 	
