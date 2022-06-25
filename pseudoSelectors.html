@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Attribute and Pseudo Selectors
+        </title>
+        <style>
+            .containner{
+                margin:34px 23px;
+                display:block;
+                width:233px;
+                margin:auto;
+            }
+            a[target = "_blank"]{
+                font-size: 33px;
+                color:violet;
+            }
+            a[target = "_self"]{
+                color:brown;
+                width:233px;
+                display:block;
+                margin:auto;
+            }
+
+            input{
+                display:block;
+
+            }
+            input[type = 'text']{
+                border:2px solid red;
+                padding:2px;
+
+            }
+            input[type = "email"]{
+                color:yellow;
+                border:4px solid black;
+            }
+            /* This will apply property for third child */
+            /*li:nth-child(3){
+                color:cyan;
+            }
+            li:nth-child(2n+0){
+                color:chartreuse;
+            }*/
+            li:nth-child(3n+3){
+                color:cadetblue;
+            }
+            /* Odd child */
+            li:nth-child(Odd){
+                color:pink;
+            }
+            /* Even child */
+            li:nth-child(Even){
+                color:khaki;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a href = "https://www.kaggle.com" target = "_blank">Go to Kaggle</a></h1>
+        <h1><a href = "https://www.google.com" target = "_self">Go to google</a></h1>
+        <h1><a href = "https://www.facebook.com" target = "_blank">Go to Facebook</a></h1>
+        <div class="containner">
+        <form action = " " class = "form-control">
+            <input type = "text" placeholder = "Enter your name">
+            <input type = "password" placeholder = "Enter your password">
+            <input type = "Submit" value="submit">
+            <input type = "email" placeholder = "Enter your email">
+
+        </form> 
+        
+            <li class="item" id="item-1">Item-1</li>
+            <li class="item" id="item-2">Item-2</li>
+            <li class="item" id="item-3">Item-3</li>
+            <li class="item" id="item-4">Item-4</li>
+            <li class="item" id="item-5">Item-4</li>
+            <li class="item" id="item-6">Item-5</li>
+        </div>
+    </body>
+</html>
