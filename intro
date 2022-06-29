@@ -1,0 +1,50 @@
+// nodejs --> 
+//event driven --> the interacttion of the user with the system --> event
+// to the event done by the user if the program responds --> event driven
+//Asynchronous --> the operations or functions in nodejs are executed parllely
+// implemented in 2009 --> Ryan Dahl
+//Node js is implemented upon the javaScript
+// Node js --> has its own Run-time environment
+// java Script --> in browser the program gets executed has no runtime environment
+Node js Application ----> Event loop ---> File system 
+
+                            ->Task1
+                            ->Task2
+                            ->Task3
+                            ->Task4
+
+--> the above event loop increases Asynchronous 
+
+--> the programs gets executed by callback function
+-->For InterDependent events --> Synchronous mode of execution
+--> there should interconnection between the events.to determine the order of events --> callback function
+--> throughput --> high for nodejs
+--> Amount of data maintained in the application --> Scalability
+-->CrossPlatform --> can run in any OS
+--> Real Time --> goldPrice,weather,covid,--> can deal with real time data --> it has lot more repositories and libraries
+-->php --> heavy weight process --> create a new process for every client request
+--> nodejs --> uses threads --> light weight
+--> Netflix --> using nodejs
+-->npm --> node package manager
+-->all the libraries are present inside the npm
+
+
+-->code . --> to open the vscode
+--> to configure the application we use --> npm init 
+
+// callback functions
+-->in callback function one parameter can be functionbody to another function
+--> in this after the source definition is completed.it calls the parameterized function.indicating the source function is completed.
+
+
+// Modules
+-->Core Modules --> installed during installation of the nodejs
+--> console
+--> fs --> file system
+--> os --> operating system
+
+// JSON
+//Stringify() --> converts object to array
+--> parse() --> converts array to object
+
+In 

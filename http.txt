@@ -1,0 +1,10 @@
+HTTP --> Hypertext Transfer protocol
+HyperText --> the text which is  moved from one document to another document.
+--> the document which having Hypertext is transfered overed the internet 
+--> the protocol used to transfer the Hypertext 
+-->needke
+-->fetch
+-->axios
+-->got
+-->status code = 200 --> if request is processed properly
+-->status code = 404 --> if the url is wrong .or problem from server side
