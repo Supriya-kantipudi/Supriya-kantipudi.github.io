@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exp7</title>
+    <style>
+         .b{
+            width: 180px;
+         }
+    </style>
+    <script>
+        function fact(){
+            const a = document.getElementById('invar').value
+            var pro = 1;
+            for(var i = a;i > 0;i--){
+                pro  = pro * i
+            }
+            document.getElementById('res').innerHTML = 'factorial is ' + pro
+        }
+        function fib(){
+            const a = document.getElementById('invar').value
+            var k = 0
+            var l = 1
+            var fin = '0 '
+            var res = k + l
+            while(res <= a){
+                fin += res + ' '
+                res = k + l
+                k = l
+                l  = res
+            }
+            document.getElementById('res').innerHTML = fin;
+        }
+        function isPrime(num){
+            if(i === 2){
+                return true
+            }
+            if(i === 1){
+                return false
+            }
+            for(var i = 2;i < num;i++){
+                if(num % i === 0){
+                    return false
+                }
+            }
+            return true
+        }
+        function primes(){
+            var fin = ""
+            const num = document.getElementById('invar').value
+            for(var i = 2;i <= num;i++){
+                if(isPrime(i)){
+                    fin += i + " "
+                }
+            }
+            document.getElementById('res').innerHTML = fin
+        }
+        function palindrome(){
+            const a = document.getElementById('invar').value
+            let str_num = a.toString()
+            let str_rev = str_num.split("").reverse().join("")
+            if(str_num === str_rev){
+                document.getElementById('res').innerHTML = 'It is a palindrome'
+            }
+            else{
+                document.getElementById('res').innerHTML = 'It is not a palindrome'
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <table>
+            <tr><td><input type = 'text' id = 'invar'></td></tr>
+            <tr><td><input type = 'button' class = 'b' value = 'factorial' onclick="fact()"></td></tr>
+            <tr><td><input type = 'button' class = 'b' value = 'fibonacii' onclick = 'fib()'></td></tr>
+            <tr><td><input type = 'button' class = 'b' value = 'primes' onclick="primes()"></td></tr>
+            <tr><td><input type = 'button' class = 'b' value = 'isPalindrome' onclick = 'palindrome()'></td></tr>
+        </table>
+        <p id = 'res'></p>
+    </center>
+</body>
+</html>
