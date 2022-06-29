@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <table border = "1">
+      <tr>
+        <th>SNO</th>
+        <th>RegNo</th>
+        <th>Email</th>
+        <th>Marks</th>
+        <th>MOBILE</th>
+      </tr>
+      
+        <% posts.forEach((post)=>{ 
+          %>
+          <tr>
+          <td><%= post.SNO %></td>
+          <td><%= post.RegNo%></td>
+          <td><%= post.Email%></td>
+          <td><%= post.Marks%></td>
+          <td><%= post.MOBILE%></td>
+          </tr>
+          <%
+        }) %>
+      
+    </table>
+  </body>
+</html>

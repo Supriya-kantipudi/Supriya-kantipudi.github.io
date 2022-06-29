@@ -1,0 +1,35 @@
+#npx install express-generator --view=ejs
+#npx --> node package extension
+#bin --> all the compiled js files are stored in bin folder.-->html,css
+#public --> all the static content related files are there in public folder.
+#routes --> Url-mapping The url --> router
+#views --> generating the dynamic content files ---> template engine --> ejs --> create dynamic content files
+#ejs --> embeded javascript code.
+#folder architecture of expressjs
+#bin,public,routes,views,app.js
+
+#nodemon --> track the application and save the changes automatically.
+# -g --> global --> where nodejs installed it will be installed there
+# if we apply this for all the applications
+
+in package json -->"start": "nodemon ./bin/www"
+
+#npm install --> extract all the packages in package json and install them and add them in node_modules
+To run --> npm run start
+--------------------configured with expressjs-------------------------------------------------------------
+localhost --> the browser place the request to our system where the application is running in port no 3000 and sends the response
+To run the application:
+#localhost:3000
+# to change the port no:
+#vs code --> bin --> www -->port variable -->
+#var port = normalizePort(process.env.PORT || '3000');
+# port no --> above 2000 and a 4 digit number
+#localhost --> ip address
+#ip --> 127.0.0.1:3000
+
+--------------------------------------------------------------------------------------------------------------
+#routers
+index --> all the routers related to the hometext
+users --> all the routers related to the users
+starting page --> router -->localhost -->/ --> get method
+
